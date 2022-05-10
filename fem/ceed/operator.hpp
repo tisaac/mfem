@@ -12,8 +12,8 @@
 #ifndef MFEM_LIBCEED_OPERATOR
 #define MFEM_LIBCEED_OPERATOR
 
-#include "util.hpp"
 #include "../../linalg/operator.hpp"
+#include "util.hpp"
 
 namespace mfem
 {

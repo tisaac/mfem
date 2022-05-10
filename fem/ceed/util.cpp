@@ -9,11 +9,11 @@
 // terms of the BSD-3 license. We welcome feedback and contributions, see file
 // CONTRIBUTING.md for details.
 
-#include "util.hpp"
-
 #include "../../general/device.hpp"
 #include "../../fem/gridfunc.hpp"
 #include "../../linalg/dtensor.hpp"
+#include "util.hpp"
+
 
 #include <sys/types.h>
 #include <sys/stat.h>

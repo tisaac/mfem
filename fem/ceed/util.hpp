@@ -16,7 +16,6 @@
 #include "../../general/error.hpp"
 #ifdef MFEM_USE_CEED
 #include <ceed.h>
-#include <ceed/hash.h>
 #include <ceed/backend.h>  // for CeedOperatorField
 #if !CEED_VERSION_GE(0,10,0)
 #error MFEM requires a libCEED version >= 0.10.0
@@ -45,6 +44,7 @@ namespace ceed
 void RemoveBasisAndRestriction(const mfem::FiniteElementSpace *fes);
 
 #ifdef MFEM_USE_CEED
+#include <ceed/hash.h>
 
 #define PCeedChk(err) do {                                                     \
      if ((err))                                                                \
